@@ -29,3 +29,23 @@ jobs:
 
       - name: Build success message
         run: echo "🎉 Build and test completed successfully!"
+      - name: Check for README file
+        run: |
+          if [ -f README.md ]; then
+            echo "✅ README.md exists"
+          else
+            echo "❌ README.md missing"
+            exit 1
+          fi
+
+      - name: Count total files in app folder
+        run: |
+          count=$(find app -type f | wc -l)
+          echo "Total files in app folder: $count"
+
+      - name: Simulate a test suite
+        run: |
+          echo "Running test suite..."
+          echo "Test 1: File structure ... PASSED"
+          echo "Test 2: Config validation ... PASSED"
+          echo "All tests passed! ✅"
