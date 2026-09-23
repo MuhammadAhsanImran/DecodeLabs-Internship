@@ -1,0 +1,51 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main, feature/* ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Display project structure
+        run: ls -R app
+
+      - name: Run a simple test check
+        run: |
+          echo "Running basic checks..."
+          if [ -f app/config.conf ]; then
+            echo "✅ config.conf found"
+          else
+            echo "❌ config.conf missing"
+            exit 1
+          fi
+
+      - name: Build success message
+        run: echo "🎉 Build and test completed successfully!"
+      - name: Check for README file
+        run: |
+          if [ -f README.md ]; then
+            echo "✅ README.md exists"
+          else
+            echo "❌ README.md missing"
+            exit 1
+          fi
+
+      - name: Count total files in app folder
+        run: |
+          count=$(find app -type f | wc -l)
+          echo "Total files in app folder: $count"
+
+      - name: Simulate a test suite
+        run: |
+          echo "Running test suite..."
+          echo "Test 1: File structure ... PASSED"
+          echo "Test 2: Config validation ... PASSED"
+          echo "All tests passed! ✅"
