@@ -1,9 +1,44 @@
-# DecodeLabs Internship — Project 1
+# DecodeLabs DevOps Internship
 
 ## About
-This repository documents my journey through **Project 1** of the DevOps Internship at **DecodeLabs** — focused on mastering Linux & Command Line fundamentals.
+This repository documents my complete journey through the **DevOps Internship at DecodeLabs** — covering Linux fundamentals, Git version control, CI/CD automation, and containerization.
 
-## Topics Covered
+## Tech Stack
+- Ubuntu (WSL2)
+- Bash / Shell
+- Git & GitHub
+- GitHub Actions
+- Docker
+
+---
+
+## ✅ Project 1: Linux & Command Line Basics
+
+**Goal:** Master essential Linux commands used in real-world DevOps environments.
+
+### Key Skills Practiced
+- File & Directory Navigation (`pwd`, `cd`, `ls`)
+- File & Directory Engineering (`mkdir -p`, `touch`, `cp`, `mv`)
+- Safe & Force Deletion (`rm -i`, `rm -rf`)
+- File Viewing & Monitoring (`cat`, `head`, `tail`, `tail -f`)
+- User & Permissions Management (`whoami`, `id`, `chmod`)
+- Real-World Task: Web App Directory Setup
+
+---
+
+## ✅ Project 2: Version Control with Git
+
+**Goal:** Practice a professional Git workflow using branching, commits, and pull requests.
+
+### Key Skills Practiced
+- Feature Branch Workflow (`git checkout -b`)
+- Meaningful, distinct commit history
+- Pushing code to a remote repository
+- Creating & Merging Pull Requests
+- Collaborative Git workflow (trunk-based development)
+
+---
+
 ## ✅ Project 3: CI/CD Pipeline Basics
 
 **Goal:** Automate the build and test process using GitHub Actions.
@@ -25,17 +60,9 @@ A CI pipeline (`.github/workflows/ci-pipeline.yml`) that automatically:
 - The difference between Continuous Integration (CI) and Continuous Deployment (CD)
 - How to write and debug YAML workflow files
 - The importance of automated quality gates before deployment
-- How a single `git push` can trigger an entire automated pipeline- File & Directory Navigation (`pwd`, `cd`, `ls`)
-- File & Directory Engineering (`mkdir -p`, `touch`, `cp`, `mv`)
-- Safe & Force Deletion (`rm -i`, `rm -rf`)
-- File Viewing & Monitoring (`cat`, `head`, `tail`, `tail -f`)
-- User & Permissions Management (`whoami`, `id`, `chmod`)
-- Real-World Task: Web App Directory Setup
+- How a single `git push` can trigger an entire automated pipeline
 
-## Tech Stack
-- Ubuntu (WSL2)
-- Bash / Shell
-- Git & GitHub
+---
 
 ## ✅ Project 4: Containerization with Docker
 
