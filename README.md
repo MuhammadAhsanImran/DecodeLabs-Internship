@@ -37,5 +37,35 @@ A CI pipeline (`.github/workflows/ci-pipeline.yml`) that automatically:
 - Bash / Shell
 - Git & GitHub
 
+## ✅ Project 4: Containerization with Docker
+
+**Goal:** Package the application into a portable, isolated container using Docker.
+
+### Key Skills Practiced
+- **Dockerfile:** Writing build instructions (FROM, WORKDIR, COPY, EXPOSE)
+- **Image Building:** Creating a reusable image with `docker build`
+- **Container Runtime:** Running isolated processes with `docker run`
+- **Port Mapping:** Exposing container services to the host machine
+
+### What I Built
+A Dockerfile that:
+- Uses a lightweight `nginx:alpine` base image
+- Copies the application's static files into the container
+- Exposes port 80 for web traffic
+- Builds into a portable image (`my-app:v1`) that runs identically anywhere
+
+### What I Learned
+- How containers solve the "it works on my machine" problem
+- The Dockerfile → Image → Container lifecycle
+- How to map a host port to a container port for local access
+- Why minimal base images matter for build speed and security
+
+---
+
+## 🎓 Internship Summary
+
+This repository documents my complete DevOps Internship journey at DecodeLabs:
+**Linux Fundamentals → Version Control → CI/CD Automation → Containerization**
+
 ## Author
 Muhammad Ahsan — DevOps Intern @ DecodeLabs
